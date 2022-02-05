@@ -23,6 +23,7 @@ def Hist_painting(color_list):
     
     for l in range (1,11):
         for j in range(0,10):
+                timmy.hideturtle()
                 random=random_color(color_list)
                 timmy.pencolor(random)
                 timmy.penup()
@@ -36,7 +37,7 @@ def Hist_painting(color_list):
         timmy.pendown()
 
 timmy=Turtle()
-timmy.shape('turtle')
+timmy.hideturtle()
 timmy.setpos(0,0)
 colormode(255)
 timmy.pensize(20)
